@@ -1,0 +1,109 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the calculator */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+}
+
+/* Calculator Box */
+.calculator {
+    background: #2c3e50;
+    padding: 20px;
+    border-radius: 15px;
+    width: 340px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Display */
+#display {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    text-align: right;
+    font-size: 2rem;
+    padding: 15px;
+    color: #333;
+}
+
+/* Button Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* All Buttons */
+button {
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: 0.2s;
+    background: #ecf0f1;
+}
+
+button:hover {
+    background: #d5dbdb;
+    transform: scale(1.05);
+}
+
+/* Operator Buttons */
+button[onclick*="chooseOperator"] {
+    background: #f39c12;
+    color: white;
+}
+
+button[onclick*="chooseOperator"]:hover {
+    background: #e67e22;
+}
+
+/* Clear Button */
+.clear {
+    background: #e74c3c;
+    color: white;
+}
+
+.clear:hover {
+    background: #c0392b;
+}
+
+/* Equals Button */
+.equals {
+    background: #27ae60;
+    color: white;
+    grid-row: span 2;
+}
+
+.equals:hover {
+    background: #229954;
+}
+
+/* Zero Button */
+.zero {
+    grid-column: span 2;
+}
+
+/* Backspace Button */
+button:last-child,
+button:nth-child(4) {
+    background: #3498db;
+    color: white;
+}
+
+button:nth-child(4):hover {
+    background: #2980b9;
+}
