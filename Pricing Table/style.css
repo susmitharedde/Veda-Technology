@@ -1,0 +1,168 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.pricing-section{
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.pricing-section h1{
+    font-size: 40px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.subtitle{
+    color: #666;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+.pricing-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.pricing-card{
+    background: #fff;
+    width: 320px;
+    padding: 35px 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.pricing-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.pricing-card h2{
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.pricing-card h3{
+    font-size: 42px;
+    color: #0077ff;
+    margin-bottom: 25px;
+}
+
+.pricing-card h3 span{
+    font-size: 16px;
+    color: #666;
+    font-weight: 400;
+}
+
+.pricing-card ul{
+    list-style: none;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.pricing-card ul li{
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    color: #555;
+    font-size: 16px;
+}
+
+.pricing-card button{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    outline: none;
+    background: #0077ff;
+    color: white;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pricing-card button:hover{
+    background: #005fcc;
+}
+
+.popular{
+    border: 3px solid #0077ff;
+    transform: scale(1.05);
+}
+
+.popular:hover{
+    transform: scale(1.08) translateY(-10px);
+}
+
+.badge{
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0077ff;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media (max-width: 992px){
+    .pricing-container{
+        gap: 20px;
+    }
+
+    .pricing-card{
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px){
+
+    .pricing-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .popular{
+        transform: scale(1);
+    }
+
+    .popular:hover{
+        transform: translateY(-10px);
+    }
+
+    .pricing-section h1{
+        font-size: 32px;
+    }
+
+    .subtitle{
+        font-size: 16px;
+    }
+}
