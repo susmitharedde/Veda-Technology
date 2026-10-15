@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🔄 Unit Converter</h1>
+        <p class="subtitle">Convert Length and Weight Units Instantly</p>
+
+        <div class="input-group">
+            <label for="value">Enter Value</label>
+            <input
+                type="number"
+                id="value"
+                placeholder="Enter value"
+            >
+        </div>
+
+        <div class="select-group">
+
+            <div>
+                <label for="fromUnit">From</label>
+                <select id="fromUnit">
+                    <optgroup label="Length">
+                        <option value="meter">Meter</option>
+                        <option value="kilometer">Kilometer</option>
+                        <option value="feet">Feet</option>
+                        <option value="inch">Inch</option>
+                    </optgroup>
+
+                    <optgroup label="Weight">
+                        <option value="kilogram">Kilogram</option>
+                        <option value="gram">Gram</option>
+                        <option value="pound">Pound</option>
+                        <option value="ounce">Ounce</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <label for="toUnit">To</label>
+                <select id="toUnit">
+                    <optgroup label="Length">
+                        <option value="meter">Meter</option>
+                        <option value="kilometer">Kilometer</option>
+                        <option value="feet" selected>Feet</option>
+                        <option value="inch">Inch</option>
+                    </optgroup>
+
+                    <optgroup label="Weight">
+                        <option value="kilogram">Kilogram</option>
+                        <option value="gram">Gram</option>
+                        <option value="pound">Pound</option>
+                        <option value="ounce">Ounce</option>
+                    </optgroup>
+                </select>
+            </div>
+
+        </div>
+
+        <button id="convertBtn">
+            Convert
+        </button>
+
+        <div class="result-box">
+            <h2>Result</h2>
+            <p id="result">Enter a value to convert.</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
