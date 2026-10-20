@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Signup Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to Our Website</h1>
+        <p>
+            Stay updated with our latest news, offers, and updates.
+            Subscribe to our newsletter!
+        </p>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+
+        <div class="modal">
+
+            <span class="close-btn" id="closeBtn">&times;</span>
+
+            <h2>Newsletter Signup</h2>
+
+            <p>Enter your email to receive our latest updates.</p>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+            >
+
+            <button id="subscribeBtn">
+                Subscribe
+            </button>
+
+            <p id="message"></p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
