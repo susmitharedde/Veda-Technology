@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Icon Display</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Weather Icon Display</h1>
+
+    <select id="weatherSelect">
+        <option value="">-- Select Weather --</option>
+        <option value="sunny">Sunny</option>
+        <option value="cloudy">Cloudy</option>
+        <option value="rainy">Rainy</option>
+        <option value="storm">Storm</option>
+        <option value="snow">Snow</option>
+    </select>
+
+    <div class="weather-box" id="weatherBox">
+
+        <i id="weatherIcon" class="fa-solid fa-circle-question"></i>
+
+        <h2 id="weatherTitle">
+            Select Weather
+        </h2>
+
+        <p id="weatherDescription">
+            Please choose a weather condition from the dropdown.
+        </p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

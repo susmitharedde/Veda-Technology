@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:100vh;
+
+    background:linear-gradient(135deg,#74ebd5,#9face6);
+}
+
+.container{
+
+    width:380px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0px 10px 25px rgba(0,0,0,.2);
+
+}
+
+h1{
+
+    margin-bottom:20px;
+
+    color:#333;
+
+}
+
+select{
+
+    width:100%;
+
+    padding:12px;
+
+    font-size:18px;
+
+    border-radius:8px;
+
+    border:1px solid gray;
+
+    outline:none;
+
+    cursor:pointer;
+
+}
+
+.weather-box{
+
+    margin-top:25px;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    transition:.4s;
+
+}
+
+.weather-box i{
+
+    font-size:80px;
+
+    margin-bottom:15px;
+
+}
+
+.weather-box h2{
+
+    margin-bottom:10px;
+
+}
+
+.weather-box p{
+
+    font-size:18px;
+
+}
+
+/* Weather Backgrounds */
+
+.sunny{
+
+    background:#FFE082;
+
+}
+
+.cloudy{
+
+    background:#CFD8DC;
+
+}
+
+.rainy{
+
+    background:#90CAF9;
+
+}
+
+.storm{
+
+    background:#B0BEC5;
+
+}
+
+.snow{
+
+    background:#E1F5FE;
+
+}
